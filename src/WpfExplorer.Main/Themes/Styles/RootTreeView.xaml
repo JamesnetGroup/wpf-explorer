@@ -1,0 +1,133 @@
+﻿<ResourceDictionary 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:james="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf"
+    xmlns:units="clr-namespace:WpfExplorer.Main.UI.Units"
+    xmlns:based="clr-namespace:WpfExplorer.LayoutSupport.UI.Units;assembly=WpfExplorer.LayoutSupport"
+	xmlns:convt="clr-namespace:WpfExplorer.Main.Local.Converters">
+
+	<Style TargetType="{x:Type ToggleButton}" x:Key="EXPANDER">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type ToggleButton}">
+					<Border Background="Transparent">
+						<james:JamesIcon x:Name="icon" Icon="ChevronRight" Fill="{TemplateBinding Foreground}" Margin="10 0 4 0"/>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="icon" Property="Icon" Value="ChevronDown"/>
+						</Trigger>
+						<DataTrigger Binding="{Binding Children.Count}" Value="0">
+							<Setter TargetName="icon" Property="Visibility" Value="Hidden"/>
+						</DataTrigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type TreeViewItem}" x:Key="TRVI">
+		<Setter Property="AlternationCount" Value="2"/>
+		<Setter Property="ItemsSource" Value="{Binding Children}"/>
+		<Setter Property="IsExpanded" Value="{Binding IsExpanded, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+		<Setter Property="IsSelected" Value="{Binding IsSelected}"/>
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="SnapsToDevicePixels" Value="True"/>
+		<Setter Property="UseLayoutRounding" Value="True"/>
+		<Setter Property="Foreground" Value="#FFFFFF"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type TreeViewItem}">
+					<Border Padding="0 0 0 0">
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto"/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+							<Border x:Name="item" 
+									Padding="{Binding Depth, Converter={convt:LeftMarginConverter}}"
+									Background="{TemplateBinding Background}"
+									BorderThickness="0 0 0 0"
+									BorderBrush="#313131">
+								<Grid Margin="0 4 0 4">
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="Auto"/>
+										<ColumnDefinition Width="Auto"/>
+										<ColumnDefinition Width="*"/>
+									</Grid.ColumnDefinitions>
+									<ToggleButton Grid.Column="0" 
+												  x:Name="expand"
+												  IsChecked="{Binding IsExpanded}"
+												  Foreground="{TemplateBinding Foreground}"
+												  Style="{StaticResource EXPANDER}"/>
+                                    <james:JamesIcon x:Name="icon" 
+													Grid.Column="1"
+													Icon="{Binding IconType}"
+													Width="16" Height="16" 
+													Margin="4 2 4 2" 
+													Fill="{TemplateBinding Foreground}"/>
+									<TextBlock Grid.Row="0" Grid.Column="2" 
+											   x:Name="text"
+										       Foreground="{TemplateBinding Foreground}"
+										       Text="{Binding Name}"
+											   Margin="0 0 30 0"
+											   TextTrimming="CharacterEllipsis"
+											   VerticalAlignment="Center"/>
+								</Grid>
+							</Border>
+							<ItemsPresenter x:Name="items" Grid.Row="1" Visibility="Collapsed"/>
+						</Grid>
+					</Border>
+					<ControlTemplate.Triggers>
+						<DataTrigger Binding="{Binding IconType}" Value="Folder">
+							<Setter TargetName="icon" Property="Fill" Value="#FFEFB13A"/>
+							<Setter Property="Background" Value="#313131"/>
+						</DataTrigger>
+						<DataTrigger Binding="{Binding IsDenied}" Value="True">
+							<Setter TargetName="icon" Property="Opacity" Value="0.3"/>
+							<Setter TargetName="text" Property="Opacity" Value="0.3"/>
+						</DataTrigger>
+						<Trigger Property="IsExpanded" Value="True">
+							<Setter TargetName="items" Property="Visibility" Value="Visible"/>
+						</Trigger>
+						<Trigger Property="IsSelected" Value="True">
+							<Setter Property="Background" Value="#FFE26285"/>
+						</Trigger>
+						<MultiDataTrigger>
+							<MultiDataTrigger.Conditions>
+								<Condition Binding="{Binding IconType}" Value="Folder"/>
+								<Condition Binding="{Binding IsExpanded}" Value="True"/>
+							</MultiDataTrigger.Conditions>
+                            <Setter TargetName="icon" Property="Icon" Value="FolderOpen"/>
+						</MultiDataTrigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type units:RootTreeView}">
+		<Setter Property="Grid.Row" Value="1"/>
+		<Setter Property="Grid.Column" Value="0"/>
+		<Setter Property="ItemContainerStyle" Value="{StaticResource TRVI}"/>
+		<Setter Property="SelectionCommand" Value="{Binding TreeClickCommand}"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type units:RootTreeView}">
+					<Border BorderThickness="0 0 1 0"
+							BorderBrush="#393939">
+                        <based:BasicScroll>
+							<ItemsPresenter/>
+						</based:BasicScroll>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>
+	
+	
+	
+	
+	
+	

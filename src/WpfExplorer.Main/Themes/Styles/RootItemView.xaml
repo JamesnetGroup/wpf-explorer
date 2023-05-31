@@ -1,0 +1,403 @@
+﻿<ResourceDictionary 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:james="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf"
+    xmlns:units="clr-namespace:WpfExplorer.Main.UI.Units"
+	xmlns:convt="clr-namespace:WpfExplorer.Main.Local.Converters">
+
+	<LinearGradientBrush x:Key="LGB.TEXTBOX" StartPoint="0.5, 0" EndPoint="0.5, 1">
+		<GradientStop Color="#292929" Offset="0.0" />
+		<GradientStop Color="#323232" Offset="1.0" />
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.TEXTBOX.OVER" StartPoint="0.5, 0" EndPoint="0.5, 1">
+		<GradientStop Color="#323232" Offset="0.0" />
+		<GradientStop Color="#363636" Offset="1.0" />
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.LBX.DOWN" StartPoint="0.5, 0" EndPoint="0.5, 1">
+		<GradientStop Color="#00222222" Offset="0.0" />
+		<GradientStop Color="#222222" Offset="1.0" />
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.LBX.BOTTOM" StartPoint="0.5, 0" EndPoint="0.5, 1">
+		<GradientStop Color="#191919" Offset="0.0" />
+		<GradientStop Color="#191919" Offset="1.0" />
+	</LinearGradientBrush>
+
+    <Style TargetType="{x:Type james:JamesIcon}" x:Key="ICON.BUTTON">
+		<Setter Property="Fill" Value="#DDDDDD"/>
+		<Setter Property="Margin" Value="10"/>
+		<Setter Property="Width" Value="15"/>
+		<Setter Property="Height" Value="15"/>
+	</Style>
+
+    <Style TargetType="{x:Type james:JamesIcon}" x:Key="ICON.HIDDEN">
+		<Setter Property="Icon" Value="ChevronRight"/>
+		<Setter Property="Fill" Value="#666666"/>
+		<Setter Property="Margin" Value="10"/>
+		<Setter Property="Width" Value="15"/>
+		<Setter Property="Height" Value="15"/>
+	</Style>
+
+	<Style TargetType="{x:Type Button}" x:Key="IN.ICON">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Button}">
+					<ControlTemplate.Resources>
+						<Style TargetType="{x:Type Border}" x:Key="IN.BORDER">
+							<Setter Property="Background" Value="Transparent"/>
+							<Setter Property="BorderBrush" Value="Transparent"/>
+						</Style>
+					</ControlTemplate.Resources>
+					<Border x:Name="border" Style="{StaticResource IN.BORDER}">
+                        <james:JamesIcon x:Name="icon" Style="{StaticResource ICON.BUTTON}"/>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Setter TargetName="icon" Property="Fill" Value="#FFFFFF"/>
+							<Setter TargetName="border" Property="Opacity" Value="1"/>
+							<Setter TargetName="border" Property="Background" Value="#333333"/>
+						</Trigger>
+						<Trigger Property="IsPressed" Value="True">
+							<Setter TargetName="border" Property="Background" Value="#3665B3"/>
+						</Trigger>
+						<Trigger Property="IsEnabled" Value="False">
+							<Setter TargetName="border" Property="Opacity" Value="0.2"/>
+                        </Trigger>
+                        <Trigger Property="Tag" Value="UNDO">
+                            <Setter TargetName="icon" Property="Icon" Value="ArrowLeftBold"/>
+                        </Trigger>
+                        <Trigger Property="Tag" Value="REDO">
+                            <Setter TargetName="icon" Property="Icon" Value="ArrowRightBold"/>
+                        </Trigger>
+                        <Trigger Property="Tag" Value="CMD">
+                            <Setter TargetName="icon" Property="Icon" Value="ConsoleLine"/>
+                        </Trigger>
+                        <Trigger Property="Tag" Value="CLOSE">
+                            <Setter TargetName="icon" Property="Icon" Value="Close"/>
+                        </Trigger>
+                        <Trigger Property="Tag" Value="NEWFOLDER">
+                            <Setter TargetName="icon" Property="Icon" Value="Plus"/>
+                        </Trigger>
+                        <Trigger Property="Tag" Value="MOVEUP">
+                            <Setter TargetName="icon" Property="Icon" Value="ArrowUpBold"/>
+                        </Trigger>
+                        <Trigger Property="Tag" Value="CREATEFOLDER">
+                            <Setter TargetName="icon" Property="Icon" Value="Folder"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type ToggleButton}" x:Key="IN.HIDDEN">
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="BorderBrush" Value="Transparent"/>
+		<Setter Property="BorderThickness" Value="1"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type ToggleButton}">
+					<ControlTemplate.Resources>
+						<Style TargetType="{x:Type Border}" x:Key="IN.BORDER">
+							<Setter Property="Background" Value="Transparent"/>
+							<Setter Property="BorderBrush" Value="Transparent"/>
+						</Style>
+					</ControlTemplate.Resources>
+					<Border x:Name="border" Style="{StaticResource IN.BORDER}">
+						<james:JamesIcon x:Name="icon" Style="{StaticResource ICON.HIDDEN}"/>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Setter TargetName="icon" Property="Fill" Value="#FFFFFF"/>
+							<Setter TargetName="border" Property="Opacity" Value="1"/>
+							<Setter TargetName="border" Property="Background" Value="#333333"/>
+						</Trigger>
+						<Trigger Property="IsPressed" Value="True">
+							<Setter TargetName="border" Property="Background" Value="#3665B3"/>
+						</Trigger>
+						<Trigger Property="IsChecked" Value="True">
+							<Setter TargetName="icon" Property="Fill" Value="#FFFFFF"/>
+							<Setter TargetName="icon" Property="Data" Value="{StaticResource GEO.SELECT.INVERSE}"/>
+						</Trigger>
+						<Trigger Property="IsEnabled" Value="False">
+							<Setter TargetName="border" Property="Opacity" Value="0.2"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type TextBox}" x:Key="IN.LOCATION">
+		<Setter Property="Text" Value="{Binding Current.FullName}"/>
+		<Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+		<Setter Property="Foreground" Value="#999999"/>
+		<Setter Property="CaretBrush" Value="#FFFFFF"/>
+		<Setter Property="Margin" Value="10 0 10 0"/>
+		<Setter Property="Padding" Value="0"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="TextBox">
+					<ControlTemplate.Resources>
+						<Style TargetType="{x:Type Border}" x:Key="IN.BORDER">
+							<Setter Property="Background" Value="{StaticResource LGB.TEXTBOX}"/>
+							<Setter Property="BorderThickness" Value="1"/>
+							<Setter Property="BorderBrush" Value="#222222"/>
+							<Setter Property="CornerRadius" Value="12"/>
+							<Setter Property="Height" Value="28"/>
+						</Style>
+						<Style TargetType="{x:Type ScrollViewer}" x:Key="IN.TEXT">
+							<Setter Property="VerticalAlignment" Value="Center"/>
+							<Setter Property="Margin" Value="12 0 12 0"/>
+						</Style>
+					</ControlTemplate.Resources>
+					<Border x:Name="border" Style="{StaticResource IN.BORDER}">
+						<ScrollViewer x:Name="PART_ContentHost" Style="{StaticResource IN.TEXT}"/>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Setter TargetName="border" Property="Background" Value="{StaticResource LGB.TEXTBOX.OVER}"/>
+							<Setter TargetName="border" Property="BorderBrush" Value="#191919"/>
+							<Setter Property="Foreground" Value="#BBBBBB"/>
+						</Trigger>
+						<Trigger Property="IsKeyboardFocused" Value="True">
+							<Setter TargetName="border" Property="Background" Value="{StaticResource LGB.TEXTBOX.OVER}"/>
+							<Setter TargetName="border" Property="BorderBrush" Value="#191919"/>
+							<Setter Property="Foreground" Value="#FFFFFF"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type Control}" x:Key="IN.FUNCTION">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Control}">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="*"/>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
+						</Grid.ColumnDefinitions>
+						<Button Grid.Column="0" Content="Move" ToolTip="Undo" Margin="0" x:Name="btnMoveUp" IsEnabled="{Binding IsMoveUpEnabled}" Style="{StaticResource IN.ICON}" Tag="MOVEUP"
+                                Command="{Binding MoveCommand}"/>
+						<Button Grid.Column="1" Content="Undo" ToolTip="Undo" Margin="0" x:Name="btnUndo" IsEnabled="{Binding IsUndoEnabled}" Style="{StaticResource IN.ICON}" Tag="UNDO"
+                                Command="{Binding UndoCommand}"/>
+						<Button Grid.Column="2" Content="Redo" ToolTip="Redo" Margin="0" x:Name="btnRedo" IsEnabled="{Binding IsRedoEnabled}" Style="{StaticResource IN.ICON}" Tag="REDO"
+                                Command="{Binding RedoCommand}"/>
+						<TextBox Grid.Column="3" Style="{StaticResource IN.LOCATION}"/>
+
+						<ToggleButton Grid.Column="4" Content="Hidden Visible" Style="{StaticResource IN.HIDDEN}" ToolTip="Show All Files" Padding="4" IsChecked="{Binding IsHiddenVisibility, Mode=TwoWay}"/>
+						<Button Grid.Column="5" Content="Open CMD" ToolTip="Command Prompt" x:Name="btnCMD" Style="{StaticResource IN.ICON}" Tag="CMD"
+                                Command="{Binding PromptCommand}"/>
+						<Button Grid.Column="6" Content="New Folder" ToolTip="New Folder" x:Name="btnNewFolder" Style="{StaticResource IN.ICON}" Tag="CREATEFOLDER"
+                                Command="{Binding NewCommand}"/>
+						<Button Grid.Column="7" Content="Copy Tab" ToolTip="Copy Tab" x:Name="btnCopyTab" Style="{StaticResource IN.ICON}" Tag="NEWFOLDER"
+                                Command="{Binding CopyCommand}"/>
+						<Button Grid.Column="8" Content="Close Tab" ToolTip="Close Tab" x:Name="btnCloseTab" Style="{StaticResource IN.ICON}" Tag="CLOSE"
+                                Command="{Binding CloseCommand}"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type Control}" x:Key="IN.HEADER">
+		<Setter Property="Grid.Row" Value="1"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Control}">
+					<ControlTemplate.Resources>
+						<Style TargetType="{x:Type Label}" x:Key="IN.HEADER">
+							<Setter Property="HorizontalContentAlignment" Value="Center"/>
+							<Setter Property="VerticalContentAlignment" Value="Center"/>
+							<Setter Property="BorderThickness" Value="0 1 1 1"/>
+							<Setter Property="BorderBrush" Value="#191919"/>
+							<Setter Property="Background" Value="#202020"/>
+							<Setter Property="Foreground" Value="#CCCCCC"/>
+							<Setter Property="Padding" Value="0"/>
+							<Setter Property="Height" Value="24"/>
+						</Style>
+					</ControlTemplate.Resources>
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition SharedSizeGroup="A" Width="Auto"/>
+							<ColumnDefinition Width="*"/>
+							<ColumnDefinition SharedSizeGroup="C" Width="Auto"/>
+							<ColumnDefinition SharedSizeGroup="D" Width="80"/>
+						</Grid.ColumnDefinitions>
+						<Label Grid.Column="0" Style="{StaticResource IN.HEADER}" Content=""/>
+						<Label Grid.Column="1" Style="{StaticResource IN.HEADER}" Content="Name"/>
+						<Label Grid.Column="2" Style="{StaticResource IN.HEADER}" Content="Created"/>
+						<Label Grid.Column="3" Style="{StaticResource IN.HEADER}" Content="Size" BorderThickness="0 1 0 1"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type Control}" x:Key="IN.BOTTOM">
+		<Setter Property="Grid.Row" Value="3"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Control}">
+					<ControlTemplate.Resources>
+						<Style TargetType="{x:Type Border}" x:Key="IN.BORDER">
+							<Setter Property="Margin" Value="0"/>
+							<Setter Property="Padding" Value="8 3 8 3"/>
+						</Style>
+						<Style TargetType="{x:Type StackPanel}" x:Key="IN.HORIZ">
+							<Setter Property="Orientation" Value="Horizontal"/>
+						</Style>
+						<Style TargetType="{x:Type TextBlock}" x:Key="IN.TEXT">
+							<Setter Property="Foreground" Value="#CCCCCC"/>
+							<Setter Property="Margin" Value="3 3 3 3"/>
+							<Setter Property="FontSize" Value="10.5"/>
+						</Style>
+						<Style TargetType="{x:Type TextBlock}" x:Key="IN.COUNT" BasedOn="{StaticResource IN.TEXT}">
+							<Setter Property="Text" Value="{Binding ElementName=lv, Path=Items.Count, StringFormat=' {0}개 항목'}"/>
+						</Style>
+						<Style TargetType="{x:Type TextBlock}" x:Key="IN.CHOOSE" BasedOn="{StaticResource IN.TEXT}">
+							<Setter Property="Text" Value="{Binding ElementName=lv, Path=SelectedItems.Count, StringFormat=' {0}개 항목 선택함'}"/>
+						</Style>
+						<Style TargetType="{x:Type TextBlock}" x:Key="IN.NAME" BasedOn="{StaticResource IN.TEXT}">
+							<Setter Property="Text" Value="{Binding ElementName=lv, Path=SelectedItem.FileName, StringFormat=' {0}'}"/>
+							<Setter Property="Foreground" Value="#FFFFFF"/>
+						</Style>
+					</ControlTemplate.Resources>
+					<Border Style="{StaticResource IN.BORDER}">
+						<StackPanel Style="{StaticResource IN.HORIZ}">
+							<TextBlock Style="{StaticResource IN.COUNT}"/>
+							<TextBlock Style="{StaticResource IN.CHOOSE}"/>
+							<TextBlock Style="{StaticResource IN.NAME}"/>
+						</StackPanel>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type ListBoxItem}" x:Key="LBXI.EXP">
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type ListBoxItem}">
+					<ControlTemplate.Resources>
+						<Style TargetType="{x:Type Border}" x:Key="IN.BORDER">
+							<Setter Property="Height" Value="28"/>
+						</Style>
+					</ControlTemplate.Resources>
+					<Border x:Name="border" Style="{StaticResource IN.BORDER}" Background="{TemplateBinding Background}">
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition SharedSizeGroup="A" Width="Auto"/>
+								<ColumnDefinition Width="*"/>
+								<ColumnDefinition SharedSizeGroup="C" Width="Auto"/>
+								<ColumnDefinition SharedSizeGroup="D" Width="80"/>
+							</Grid.ColumnDefinitions>
+                            <james:JamesIcon x:Name="icon" Width="16" Height="16" Icon="{Binding IconType}" Fill="#DDDDDD" Margin="10 0 0 0"/>
+							<TextBlock Grid.Column="1" Text="{Binding Name}" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" Foreground="#FFFFFF" Margin="10 0 6 0"/>
+							<TextBlock Grid.Column="2" Text="{Binding LastAccessTime}" Margin="6 0 6 0" Foreground="#CCCCCC" VerticalAlignment="Center"/>
+							<TextBlock Grid.Column="3" Text="{Binding Length, Converter={convt:FileSizeConverter}}" TextAlignment="Right" HorizontalAlignment="Right"
+                                       Foreground="#CCCCCC" Margin="6 0 10 0" VerticalAlignment="Center"/>
+						</Grid>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Setter TargetName="border" Property="Background" Value="#2f53a5"/>
+						</Trigger>
+						<Trigger Property="IsSelected" Value="True">
+							<Setter TargetName="border" Property="Background" Value="#3256a7"/>
+						</Trigger>
+						<DataTrigger Binding="{Binding IconType}" Value="Folder">
+							<Setter TargetName="icon" Property="Fill" Value="#FFEFB13A"/>
+							<Setter Property="Background" Value="Transparent"/>
+						</DataTrigger>
+						<DataTrigger Binding="{Binding IconType}" Value="FileImage">
+							<Setter TargetName="icon" Property="Fill" Value="#FFFE9C84"/>
+							<Setter Property="Background" Value="Transparent"/>
+						</DataTrigger>
+						<DataTrigger Binding="{Binding IconType}" Value="FileZip">
+							<Setter TargetName="icon" Property="Fill" Value="#FFFED484"/>
+							<Setter Property="Background" Value="Transparent"/>
+						</DataTrigger>
+						<DataTrigger Binding="{Binding IconType}" Value="FileCheck">
+							<Setter TargetName="icon" Property="Fill" Value="#FF44A7FF"/>
+							<Setter Property="Background" Value="Transparent"/>
+						</DataTrigger>
+						<DataTrigger Binding="{Binding IconType}" Value="FilePDF">
+							<Setter TargetName="icon" Property="Fill" Value="#FFF85E7C"/>
+							<Setter Property="Background" Value="Transparent"/>
+						</DataTrigger>
+						<DataTrigger Binding="{Binding IconType}" Value="FileWord">
+							<Setter TargetName="icon" Property="Fill" Value="#FF16E2FF"/>
+							<Setter Property="Background" Value="Transparent"/>
+						</DataTrigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type units:RootItemView}">
+		<Setter Property="Grid.Row" Value="1"/>
+		<Setter Property="Grid.Column" Value="1"/>
+		<Setter Property="ItemContainerStyle" Value="{StaticResource LBXI.EXP}"/>
+		<Setter Property="ItemsSource" Value="{Binding FileDatas}"/>
+		<Setter Property="SelectedItem" Value="{Binding FileData}"/>
+		<Setter Property="DoubleClickCommand" Value="{Binding FolderClickCommand}"/>
+		<Setter Property="SelectionMode" Value="Extended"/>
+		<Setter Property="Background" Value="#2B2B2B"/>
+		<Setter Property="BorderThickness" Value="0"/>
+		<Setter Property="Foreground" Value="#FFFFFF"/>
+		<Setter Property="Grid.IsSharedSizeScope" Value="True"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type units:RootItemView}">
+					<ControlTemplate.Resources>
+						<Style TargetType="{x:Type Border}" x:Key="IN.DOWN">
+							<Setter Property="IsHitTestVisible" Value="False"/>
+							<Setter Property="VerticalAlignment" Value="Bottom"/>
+							<Setter Property="Height" Value="60"/>
+						</Style>
+					</ControlTemplate.Resources>
+					<Grid Background="{TemplateBinding Background}">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="*"/>
+							<RowDefinition Height="Auto"/>
+						</Grid.RowDefinitions>
+						<Control Style="{StaticResource IN.HEADER}" Visibility="Collapsed"/>
+						<Grid Grid.Row="2">
+							<ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Hidden">
+								<ItemsPresenter/>
+							</ScrollViewer>
+							<Border Style="{StaticResource IN.DOWN}"/>
+						</Grid>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
