@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using WpfExplorer.Properties;
 
 namespace WpfExplorer
 {
@@ -11,8 +8,9 @@ namespace WpfExplorer
         [STAThread]
         public static void Main()
         {
-            App app = new();
-            app.Run();
+            _ = new App()
+                .AddWireDataContext<WireDataContext>()
+                .Run();
         }
     }
 }

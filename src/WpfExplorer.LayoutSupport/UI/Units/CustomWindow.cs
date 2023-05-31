@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jamesnet.Wpf.Controls;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -21,15 +22,15 @@ namespace WpfExplorer.LayoutSupport.UI.Units
         public ICommand MenuClickCommand { get; set; }
     }
 
-    public class Explorer : Window
+    public class CustomWindow : JamesWindow
     {
-        static Explorer()
+        static CustomWindow()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(Explorer), new FrameworkPropertyMetadata(typeof(Explorer)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(CustomWindow), new FrameworkPropertyMetadata(typeof(CustomWindow)));
         }
 
-        public static readonly DependencyProperty TitleTemplateProperty = DependencyProperty.Register("TitleTemplate", typeof(DataTemplate), typeof(Explorer), new PropertyMetadata(null));
-        public static readonly DependencyProperty SubTitleProperty = DependencyProperty.Register("SubTitle", typeof(object), typeof(Explorer), new PropertyMetadata(null));
+        public static readonly DependencyProperty TitleTemplateProperty = DependencyProperty.Register("TitleTemplate", typeof(DataTemplate), typeof(CustomWindow), new PropertyMetadata(null));
+        public static readonly DependencyProperty SubTitleProperty = DependencyProperty.Register("SubTitle", typeof(object), typeof(CustomWindow), new PropertyMetadata(null));
 
         protected bool IsFixedSize;
         protected MenuModel MenuInfo;
@@ -47,7 +48,7 @@ namespace WpfExplorer.LayoutSupport.UI.Units
             set => SetValue(SubTitleProperty, value);
         }
 
-        public Explorer()
+        public CustomWindow()
         {
             WindowStyle = WindowStyle.None;
             ResizeMode = ResizeMode.CanResize;

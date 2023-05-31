@@ -10,49 +10,30 @@ namespace WpfExplorer.Main.UI.Units
 {
     public class PolygonSelector : ListBox
     {
-        #region DefaultStyleKey
-
         static PolygonSelector()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(PolygonSelector), new FrameworkPropertyMetadata(typeof(PolygonSelector)));
         }
-        #endregion
-
-        #region DependencyProperties
 
         public static readonly DependencyProperty DataProperty = DependencyProperty.Register("Data", typeof(FileModel), typeof(PolygonSelector), new PropertyMetadata(null, DataChanged));
         public static readonly DependencyProperty SelectionCommandProperty = DependencyProperty.Register("SelectionCommand", typeof(ICommand), typeof(PolygonSelector));
-        #endregion
-
-        #region SelectionCommand
 
         public ICommand SelectionCommand
         {
             get => (ICommand)GetValue(SelectionCommandProperty);
             set => SetValue(SelectionCommandProperty, value);
         }
-        #endregion
-
-        #region Data
 
         public FileModel Data
         {
             get { return (FileModel)this.GetValue(DataProperty); }
             set { this.SetValue(DataProperty, value); }
         }
-        #endregion
-
-        #region Constructor
 
         public PolygonSelector()
         {
 
         }
-        #endregion
-
-        // DpendencyProperty Callback..♥
-
-        #region DataChanged
 
         private static void DataChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -116,16 +97,10 @@ namespace WpfExplorer.Main.UI.Units
                 }
             }
         }
-        #endregion
-
-        // ICommand Action..♥
-
-        #region PolygonClick
 
         private void PolygonClick(FileModel item)
         {
             SelectionCommand.Execute(item);
         }
-        #endregion
     }
 }

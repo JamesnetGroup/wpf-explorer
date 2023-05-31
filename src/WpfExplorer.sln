@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer", "WpfExplorer\WpfExplorer.csproj", "{8049AC46-FEB0-4B56-A83D-E65D9C822FC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer", "WpfExplorer\WpfExplorer.csproj", "{8049AC46-FEB0-4B56-A83D-E65D9C822FC6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Based", "Based", "{55132596-5F08-4366-8060-9C799CB81CDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.LayoutSupport", "WpfExplorer.LayoutSupport\WpfExplorer.LayoutSupport.csproj", "{2A472DF1-677F-4FCC-8CC4-921A3F3FC9CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.LayoutSupport", "WpfExplorer.LayoutSupport\WpfExplorer.LayoutSupport.csproj", "{2A472DF1-677F-4FCC-8CC4-921A3F3FC9CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.Forms", "WpfExplorer.Forms\WpfExplorer.Forms.csproj", "{64462EEE-D615-46F4-83BB-C6FB76D2DE5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.Main", "WpfExplorer.Main\WpfExplorer.Main.csproj", "{88052243-1336-4BBD-9419-C158DB33B03C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.Main", "WpfExplorer.Main\WpfExplorer.Main.csproj", "{88052243-1336-4BBD-9419-C158DB33B03C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Partial", "Partial", "{8C1D93A8-3A5E-4008-9A75-485626F582B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Studio", "Studio", "{59CD1295-BEF9-43C7-8F08-DB929CB80C7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +29,6 @@ Global
 		{2A472DF1-677F-4FCC-8CC4-921A3F3FC9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A472DF1-677F-4FCC-8CC4-921A3F3FC9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A472DF1-677F-4FCC-8CC4-921A3F3FC9CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64462EEE-D615-46F4-83BB-C6FB76D2DE5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64462EEE-D615-46F4-83BB-C6FB76D2DE5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64462EEE-D615-46F4-83BB-C6FB76D2DE5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64462EEE-D615-46F4-83BB-C6FB76D2DE5F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{88052243-1336-4BBD-9419-C158DB33B03C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{88052243-1336-4BBD-9419-C158DB33B03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88052243-1336-4BBD-9419-C158DB33B03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -40,7 +38,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{8049AC46-FEB0-4B56-A83D-E65D9C822FC6} = {59CD1295-BEF9-43C7-8F08-DB929CB80C7D}
 		{2A472DF1-677F-4FCC-8CC4-921A3F3FC9CA} = {55132596-5F08-4366-8060-9C799CB81CDE}
+		{88052243-1336-4BBD-9419-C158DB33B03C} = {8C1D93A8-3A5E-4008-9A75-485626F582B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A87B05D6-202D-4B11-9FC3-F60926FE1B3D}

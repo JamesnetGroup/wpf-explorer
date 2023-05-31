@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WpfExplorer.Forms\WpfExplorer.Forms.csproj" />
     <ProjectReference Include="..\WpfExplorer.LayoutSupport\WpfExplorer.LayoutSupport.csproj" />
     <ProjectReference Include="..\WpfExplorer.Main\WpfExplorer.Main.csproj" />
   </ItemGroup>

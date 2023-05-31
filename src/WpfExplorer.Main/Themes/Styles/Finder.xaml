@@ -362,7 +362,7 @@
                                 <Button Grid.Column="0" Style="{StaticResource BTN.UP}"/>
 								<Button Grid.Column="1" Style="{StaticResource BTN.UNDO}"/>
 								<Button Grid.Column="2" Style="{StaticResource BTN.REDO}"/>
-								<units:MementoBox/>
+                                <units:HistoryBox/>
 							</StackPanel>
 
 						</Border>
@@ -381,7 +381,7 @@
 	</Style>
 	
 	
-	<Style TargetType="{x:Type views:Finder}" BasedOn="{StaticResource {x:Type based:Explorer}}">
+	<Style TargetType="{x:Type views:Finder}" BasedOn="{StaticResource {x:Type based:CustomWindow}}">
 		<Setter Property="Title" Value="DevFinder"/>
 		<Setter Property="SnapsToDevicePixels" Value="True"/>
 		<Setter Property="UseLayoutRounding" Value="True"/>

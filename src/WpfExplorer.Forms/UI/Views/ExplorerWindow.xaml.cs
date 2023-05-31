@@ -18,7 +18,7 @@ namespace WpfExplorer.Forms.UI.Views
     /// <summary>
     /// ExplorerWindow.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class ExplorerWindow : Explorer
+    public partial class ExplorerWindow : CustomWindow
     {
         public ExplorerWindow()
         {

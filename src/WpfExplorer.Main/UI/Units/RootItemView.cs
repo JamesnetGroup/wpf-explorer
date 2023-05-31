@@ -26,24 +26,6 @@ namespace WpfExplorer.Main.UI.Units
             set => SetValue(PreviewKeyDownCommandProperty, value);
         }
 
-        protected override void OnMouseRightButtonUp(MouseButtonEventArgs e)
-        {
-            base.OnMouseRightButtonUp(e);
-
-            //List<FileInfo> files;
-            //ShellContextMenu ctx;
-
-            //if (e.OriginalSource is FrameworkElement fe && fe.DataContext is FileData)
-            //{
-            //	files = new List<FileInfo>();
-            //	ctx = new ShellContextMenu();
-
-            //	// TODD James: Linq AddRange
-            //	files.AddRange(from FileData file in SelectedItems select new FileInfo(file.FullName));
-            //	ctx.ShowContextMenu(files.ToArray(), MousePosition.GetMousePosition(this));
-            //}
-        }
-
         protected override void OnMouseDoubleClick(MouseButtonEventArgs e)
         {
             base.OnMouseDoubleClick(e);

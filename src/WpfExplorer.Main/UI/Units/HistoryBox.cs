@@ -5,14 +5,14 @@ using WpfExplorer.Main.Local.Model;
 
 namespace WpfExplorer.Main.UI.Units
 {
-    public class MementoBox : ComboBox
+    public class HistoryBox : ComboBox
     {
-        static MementoBox()
+        static HistoryBox()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(MementoBox), new FrameworkPropertyMetadata(typeof(MementoBox)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(HistoryBox), new FrameworkPropertyMetadata(typeof(HistoryBox)));
         }
 
-        public static readonly DependencyProperty SelectionCommandProperty = DependencyProperty.Register("SelectionCommand", typeof(ICommand), typeof(MementoBox));
+        public static readonly DependencyProperty SelectionCommandProperty = DependencyProperty.Register("SelectionCommand", typeof(ICommand), typeof(HistoryBox));
 
         public ICommand SelectionCommand
         {

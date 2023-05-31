@@ -107,7 +107,7 @@
         <Setter Property="Background" Value="#222222"/>
     </Style>
 
-    <Style TargetType="{x:Type units:Explorer}">
+    <Style TargetType="{x:Type units:CustomWindow}">
         <Setter Property="Background" Value="#252525"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="BorderBrush" Value="#141414"/>
@@ -127,7 +127,7 @@
         </Setter>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type units:Explorer}">
+                <ControlTemplate TargetType="{x:Type units:CustomWindow}">
                     <Border Background="{TemplateBinding Background}"
 							BorderBrush="{TemplateBinding BorderBrush}"
 							BorderThickness="{TemplateBinding BorderThickness}"
