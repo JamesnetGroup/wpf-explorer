@@ -1,4 +1,5 @@
 # WPF Explorer
+![image](https://github.com/jamesnet214/wpf-explorer/assets/52397976/a27d9634-ca51-4863-ad7d-d290a2fdff96)
 
-![image](https://github.com/jamesnet214/wpf-explorer/assets/52397976/098738d7-ca78-4a9a-b216-bedfb1b53597)
 
+https://www.youtube.com/watch?v=2PuvhTEcWAQ
