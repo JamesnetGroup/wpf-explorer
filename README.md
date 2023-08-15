@@ -1,3 +1,4 @@
-# wpf-explorer
+# WPF Explorer
 
-![image](https://github.com/jamesnet214/wpf-explorer/assets/52397976/34defc4b-a0a5-4dc2-9e03-a6a4d4dfb8e5)
+![image](https://github.com/jamesnet214/wpf-explorer/assets/52397976/098738d7-ca78-4a9a-b216-bedfb1b53597)
+
