@@ -1,0 +1,9 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/WpfExplorer.Location;component/Themes/Units/LocatorTextBox.xaml"/>
+        <ResourceDictionary Source="/WpfExplorer.Location;component/Themes/Units/LocatorButton.xaml"/>
+        <ResourceDictionary Source="/WpfExplorer.Location;component/Themes/Views/LocationContent.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

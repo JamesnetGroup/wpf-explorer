@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.33" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WpfExplorer.Forms\WpfExplorer.Forms.csproj" />
+    <ProjectReference Include="..\WpfExplorer.Location\WpfExplorer.Location.csproj" />
+    <ProjectReference Include="..\WpfExplorer.Main\WpfExplorer.Main.csproj" />
+    <ProjectReference Include="..\WpfExplorer.Support\WpfExplorer.Support.csproj" />
+  </ItemGroup>
+
+</Project>

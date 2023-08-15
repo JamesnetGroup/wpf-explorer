@@ -1,9 +1,0 @@
-<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:WpfExplorer.LayoutSupport">
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/WpfExplorer.LayoutSupport;component/Themes/Units/CustomScrollViewer.xaml"/>
-        <ResourceDictionary Source="/WpfExplorer.LayoutSupport;component/Themes/Units/CustomWindow.xaml"/>
-    </ResourceDictionary.MergedDictionaries>
-</ResourceDictionary>
