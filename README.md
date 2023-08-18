@@ -817,7 +817,8 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ---
 
-### 📍WPF 스터디 진행중(4주연속/주 4시간)
+### 📍WPF 스터디 진행중 시즌4 
+#### * 4주연속/주 4시간 
 [바로가기](https://www.youtube.com/watch?v=2PuvhTEcWAQ) 
 
 이번 스터디의 주제는 곧 출시될 WPF 책의 내용을 바탕으로 진행될 예정입니다. 주요 학습 내용은 아래와 같습니다.
@@ -842,6 +843,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 ---
 
 ### 📚 [ WPF INSIDE OUT ] 책 구매 
+#### 온/오프라인 ??????????
 [바로가기](https://jamesnet.dev/books)
 
 <img src="https://github.com/jamesnet214/wpf-explorer/assets/101777355/341dcd46-9db5-422b-816f-cff557c91384" style="width: 30%"/>
