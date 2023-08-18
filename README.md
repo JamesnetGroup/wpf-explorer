@@ -16,7 +16,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 --- 
 
 ### 📝목차
-##### 1.1 학습의 철학과 방향성에 대해
+##### 1.OVERVIEW
 
 <details>
  
@@ -90,7 +90,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 
 
-#### Application
+#### 2.Application
 
 
 <details>
