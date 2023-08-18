@@ -16,7 +16,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 --- 
 
 ### 📝목차
-##### 1.OVERVIEW
+##### 1. OVERVIEW
 
 <details>
  
@@ -90,7 +90,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 
 
-#### 2.Application
+#### 2. Application
 
 
 <details>
@@ -143,7 +143,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 </details>
 
-#### 3 DarkWindow
+#### 3. DarkWindow
 
 <details>
  
@@ -267,7 +267,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 </details>
 
-#### 4 ExplorerWindow
+#### 4. ExplorerWindow
 
 <details>
  
@@ -449,7 +449,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 </details>
 
-#### 6 MainContent
+#### 6. MainContent
 
 <details>
  
@@ -637,7 +637,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 </details>
 
-#### 7 NavigatorService
+#### 7. NavigatorService
 
 <details>
  
@@ -733,7 +733,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 </details>
 
-#### 8 LocationContent
+#### 8. LocationContent
 
 <details>
  
@@ -811,7 +811,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 </details>
 
-#### 9 Advancement
+#### 9. Advancement
 
 <details>
  
