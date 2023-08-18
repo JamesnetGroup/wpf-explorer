@@ -18,6 +18,12 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 ### 📝목차
 ##### 1.1 학습의 철학과 방향성에 대해
 
+<details>
+ 
+  <summary></summary>
+  
+##### 1.1 학습의 철학과 방향성에 대해
+
 ###### 1.1.1 이 책을 통한 학습 방법
 
 ###### 1.1.2 실전 프로젝트 소개
@@ -78,11 +84,18 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ##### 1.8 (Project Overview) 섹션의 마무리
 
+</details>
+
+
+
 
 
 #### Application
 
----
+
+<details>
+ 
+  <summary></summary>
 
 ##### 2.1 프로젝트 네이밍
 
@@ -128,11 +141,13 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ##### 2.8 (Application) 섹션의 마무리
 
-
+</details>
 
 #### 3 DarkWindow
 
-----
+<details>
+ 
+  <summary></summary>
 
 ##### 3.1 프로젝트 네이밍
 
@@ -250,11 +265,13 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ##### 3.14 (Darkwindow) 섹션의 마무리
 
-
+</details>
 
 #### 4 ExplorerWindow
 
-----
+<details>
+ 
+  <summary></summary>
 
 ##### 4.1 프로젝트 네이밍
 
@@ -310,11 +327,13 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ##### 4.7 (ExplorerWindow) 섹션의 마무리
 
-
+</details>
 
 #### 5. Multiple ItemsControl
 
----
+<details>
+ 
+  <summary></summary>
 
 ##### 5.1 TreeView 구현
 
@@ -428,11 +447,13 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ##### 5.20 (Multiple ItemsControl) 섹션의 마무리
 
-
+</details>
 
 #### 6 MainContent
 
-----
+<details>
+ 
+  <summary></summary>
 
 ##### 6.1 WpfExplorer.Main
 
@@ -614,12 +635,14 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ##### 6.24 (MainContent) 세션의 마무리
 
-
+</details>
 
 #### 7 NavigatorService
 
----
-
+<details>
+ 
+  <summary></summary>
+  
 ##### 7.1 싱글턴 인스턴스 구현
 
 ###### 7.1.1 NavigatorService.cs (파일 생성)
@@ -708,11 +731,13 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ##### 7.7 (NavigatorService) 섹션의 마무리
 
-
+</details>
 
 #### 8 LocationContent
 
----
+<details>
+ 
+  <summary></summary>
 
 ##### 8.1 WpfExplorer.Location
 
@@ -784,8 +809,13 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ##### 8.9 (LocationContent) 섹션의 마무리
 
+</details>
+
 #### 9 Advancement
----
+
+<details>
+ 
+  <summary></summary>
 
 ##### 9.1 DarkScrollViewer 고도화
 
@@ -815,7 +845,9 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ##### 9.4 (LocationContent) 섹션의 마무리
 
----
+</details>
+ 
+
 
 ### 📍WPF 스터디 시즌4 [모집중]  
 #### * 4주 연속/주 4시간 
