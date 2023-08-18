@@ -875,7 +875,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 ---
 
 ### 📚 [ WPF INSIDE OUT ] 책 구매 
-#### 온/오프라인 ??????????
+
 [바로가기](https://jamesnet.dev/books)
 
 <img src="https://github.com/jamesnet214/wpf-explorer/assets/101777355/341dcd46-9db5-422b-816f-cff557c91384" style="width: 30%"/>
