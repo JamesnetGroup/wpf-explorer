@@ -2,8 +2,9 @@
 
 <img src="https://github.com/jamesnet214/wpf-explorer/assets/52397976/a27d9634-ca51-4863-ad7d-d290a2fdff96" style="width: 70%"/>
 
+--- 
 
-### 실전 프로젝트 소개
+### ✏️실전 프로젝트 소개
 WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하기 위한 실전 프로젝트입니다. 이 애플리케이션은 윈도우 탐색기의 디렉토리 및 파일 탐색 구조를 반영하여, WPF의 핵심 요소를 체계적으로 이해하는 데 이상적입니다. 여기에는 MVVM 아키텍처, 고급 데이터 바인딩 기술 등 WPF에서의 실무적인 고급 기술들을 전반적으로 다루고 있습니다.
 
 대규모 프로젝트의 관리와 리드에 필요한 세부 기술과 노하우도 집중적으로 다룹니다. 특히, 사용자 지정 컨트롤을 활용한 모듈화된 뷰와 리소스 관리에 대한 실무 지침을 제공하며, ControlTemplate과 트리거를 활용하여 UI/UX 디자인을 효과적으로 제어하는 방법을 소개합니다.
@@ -12,8 +13,9 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 마지막으로, WpfExplorer는 단순한 학습 도구를 넘어, WPF의 세계를 체계적으로 탐험하며 실질적인 프로젝트 경험을 제공합니다. 이 프로젝트는 WPF에 대한 깊이 있는 이해와 실무 능력 향상을 목표로 하는 모든 개발자에게 귀중한 자산이 될 수 있도록 세부적인 요소까지 세심하고 의미 있게 구성하였습니다.
 
 
+--- 
 
-### 목차
+### 📝목차
 ##### 1.1 학습의 철학과 방향성에 대해
 
 ###### 1.1.1 이 책을 통한 학습 방법
@@ -815,7 +817,8 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 
 ---
 
-### WPF 스터디 진행중 [[바로가기]] (https://www.youtube.com/watch?v=2PuvhTEcWAQ) 
+### 📍WPF 스터디 진행중(4주연속/주 4시간)
+[바로가기](https://www.youtube.com/watch?v=2PuvhTEcWAQ) 
 
 이번 스터디의 주제는 곧 출시될 WPF 책의 내용을 바탕으로 진행될 예정입니다. 주요 학습 내용은 아래와 같습니다.
 
@@ -835,16 +838,19 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 - CommunityToolkit.Mvvm 사용으로 MVVM 패턴 생산성 향상
 - Multiple ItemsControl 계층적 활용
 - WPF의 고급 기능 학습 및 실무 경험 지원
+
 ---
+
+### 📚 [ WPF INSIDE OUT ] 책 구매 
+[바로가기](https://jamesnet.dev/books)
+
 <img src="https://github.com/jamesnet214/wpf-explorer/assets/101777355/341dcd46-9db5-422b-816f-cff557c91384" style="width: 30%"/>
 
-### WPF INSIDE OUT 책 구매 [바로가기] (https://jamesnet.dev/books)
-
 ---
 
+### 📺 유튜브 실습 영상 
+[바로가기](https://www.youtube.com/watch?v=2PuvhTEcWAQ) 
+ 
 <img src="https://github.com/jamesnet214/wpf-explorer/assets/101777355/e0e06587-5d9b-4c07-8cbe-7da82efccb99" style="width: 40%"/>
-
-### 유튜브 실습 영상 [[바로가기]] (https://www.youtube.com/watch?v=2PuvhTEcWAQ) 
-
 
 
