@@ -818,7 +818,7 @@ WpfExplorer는 WPF (Windows Presentation Foundation)를 깊이 있게 탐구하�
 ---
 
 ### 📍WPF 스터디 시즌4 [모집중]  
-#### * 4주연속/주 4시간 
+#### * 4주 연속/주 4시간 
 [바로가기](https://www.youtube.com/watch?v=2PuvhTEcWAQ) 
 
 이번 스터디의 주제는 곧 출시될 WPF 책의 내용을 바탕으로 진행될 예정입니다. 주요 학습 내용은 아래와 같습니다.
