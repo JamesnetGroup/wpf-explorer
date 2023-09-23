@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.Forms", "WpfExp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.Main", "WpfExplorer.Main\WpfExplorer.Main.csproj", "{455093FF-4FEE-4441-9B02-89BE3F7A0960}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExplorer.Location", "WpfExplorer.Location\WpfExplorer.Location.csproj", "{EF6C88C1-194C-431B-9129-49D5BB4DFC51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExplorer.Location", "WpfExplorer.Location\WpfExplorer.Location.csproj", "{EF6C88C1-194C-431B-9129-49D5BB4DFC51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
