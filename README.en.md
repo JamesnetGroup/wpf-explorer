@@ -15,6 +15,8 @@ WPF Explorer is the core example project in the "WPF INSIDE OUT" book, designed 
 <img src="https://github.com/user-attachments/assets/a7b9c310-6b2b-4268-bc50-ba56cccb383c" width="49%"/>
 <img src="https://github.com/user-attachments/assets/8e547f5a-762b-43de-81c7-f6f816c9190d" width="49%"/>
 
+<p/>
+
 Through this project, developers can learn the following practical WPF skills:
 - Efficient design and implementation of complex UI structures
 - Writing clean and maintainable code using the MVVM pattern
@@ -49,15 +51,15 @@ This project goes beyond simple examples and includes complex requirements and p
 
 ## Getting Started
 
-#### 1. Clone the repository:
+##### 1. Clone the repository:
 
 ```
 git clone https://github.com/jamesnet214/wpf-explorer.git
 ```
 
-#### 2. Open the solution in Visual Studio 2022 or later
-#### 3. Restore required NuGet packages
-#### 4. Build and run the project
+##### 2. Open the solution in Visual Studio 2022 or later
+##### 3. Restore required NuGet packages
+##### 4. Build and run the project
 
 
 
