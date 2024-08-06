@@ -47,15 +47,15 @@ WPF Explorer는 "WPF INSIDE OUT" 책의 핵심 예제 프로젝트로, WPF(Windo
 
 ## 시작하기
 
-#### 1. 저장소 복제:
+##### 1. 저장소 복제:
 
 ```
 git clone https://github.com/jamesnet214/wpf-explorer.git
 ```
 
-#### 2. Visual Studio 2022 이상에서 솔루션 열기
-#### 3. 필요한 NuGet 패키지 복원
-#### 4. 프로젝트 빌드 및 실행
+##### 2. Visual Studio 2022 이상에서 솔루션 열기
+##### 3. 필요한 NuGet 패키지 복원
+##### 4. 프로젝트 빌드 및 실행
 
 ## "WPF INSIDE OUT" 책 소개
 
