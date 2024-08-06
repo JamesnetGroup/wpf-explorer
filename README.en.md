@@ -12,9 +12,8 @@ A showcase of advanced WPF techniques, including MVVM, custom controls, and mode
 
 WPF Explorer is the core example project in the "WPF INSIDE OUT" book, designed to explore and practice advanced features of WPF (Windows Presentation Foundation). This project replicates the functionality of Windows Explorer using WPF, applying various advanced WPF techniques such as MVVM architecture, dependency injection, custom controls, and advanced styling techniques.
 
-
-<img src="https://github.com/user-attachments/assets/8e547f5a-762b-43de-81c7-f6f816c9190d" width="49%"/>
 <img src="https://github.com/user-attachments/assets/a7b9c310-6b2b-4268-bc50-ba56cccb383c" width="49%"/>
+<img src="https://github.com/user-attachments/assets/8e547f5a-762b-43de-81c7-f6f816c9190d" width="49%"/>
 
 Through this project, developers can learn the following practical WPF skills:
 - Efficient design and implementation of complex UI structures
