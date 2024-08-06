@@ -1,6 +1,7 @@
-# WPF INSIDE OUT - WPF Explorer
+# WPF INSIDE OUT - WPF Explorer [![한국어](https://img.shields.io/badge/Language-한국어-blue.svg)](README.md) [![English](https://img.shields.io/badge/Language-English-green.svg)](README.en.md) [![中文](https://img.shields.io/badge/Language-中文-red.svg)](README.zh-CN.md)
 
-<img src="https://github.com/jamesnet214/wpf-explorer/assets/52397976/a27d9634-ca51-4863-ad7d-d290a2fdff96" style="width: 70%"/>
+<img src="https://github.com/user-attachments/assets/a7b9c310-6b2b-4268-bc50-ba56cccb383c" width="49%"/>
+<img src="https://github.com/user-attachments/assets/8e547f5a-762b-43de-81c7-f6f816c9190d" width="49%"/>
 
 ## WPF INSIDE OUT 책 소개
 
@@ -9,8 +10,7 @@
 ### 책 구매 링크
 [WPF INSIDE OUT 구매하기](https://jamesnet.dev/store)
 
-<img src="https://github.com/jamesnet214/wpf-explorer/assets/101777355/341dcd46-9db5-422b-816f-cff557c91384" width="49%"/>
-<img src="https://github.com/user-attachments/assets/8e547f5a-762b-43de-81c7-f6f816c9190d" width="49%"/>
+![image](https://github.com/user-attachments/assets/d35b0f27-dae0-43e1-a8e4-66bab832d72a)
 
 ## 프로젝트 개요
 
@@ -45,6 +45,10 @@ WPF Explorer는 "WPF INSIDE OUT" 책의 핵심 예제 프로젝트로, WPF (Wind
 - Jamesnet.Wpf
 - Prism
 - CommunityToolkit.Mvvm
+
+<img src="https://github.com/user-attachments/assets/af70f422-7057-4e77-a54d-042ee8358d2a" width="32%"/>
+<img src="https://github.com/user-attachments/assets/e4feaa10-a107-4b58-8d13-1d8be620ec62" width="32%"/>
+<img src="https://github.com/user-attachments/assets/5ff487f6-55e4-43e1-9abf-f8d419ee6943" width="32%"/>
 
 ## 시작하기
 
