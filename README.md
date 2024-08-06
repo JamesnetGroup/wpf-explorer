@@ -14,6 +14,8 @@ WPF Explorer는 "WPF INSIDE OUT" 책의 핵심 예제 프로젝트로, WPF(Windo
 <img src="https://github.com/user-attachments/assets/a7b9c310-6b2b-4268-bc50-ba56cccb383c" width="49%"/>
 <img src="https://github.com/user-attachments/assets/8e547f5a-762b-43de-81c7-f6f816c9190d" width="49%"/>
 
+<p/>
+  
 이 프로젝트를 통해 개발자들은 다음과 같은 실용적인 WPF 기술을 배울 수 있습니다:
 - 복잡한 UI 구조의 효율적인 설계 및 구현
 - MVVM 패턴을 사용한 깨끗하고 유지보수가 쉬운 코드 작성
