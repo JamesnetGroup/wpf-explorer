@@ -1,4 +1,4 @@
-# WPF Explorer [![한국어](https://img.shields.io/badge/Language-한국어-blue.svg)](README.md) [![English](https://img.shields.io/badge/Language-English-green.svg)](README.en.md) [![中文](https://img.shields.io/badge/Language-中文-red.svg)](README.zh-CN.md)
+# WPF Explorer [![English](https://img.shields.io/badge/Language-English-blue.svg)](README.en.md) [![中文](https://img.shields.io/badge/Language-中文-red.svg)](README.zh-CN.md)  [![한국어](https://img.shields.io/badge/Language-한국어-green.svg)](README.md)
 
 Windows Explorer 클론에서 MVVM, 사용자 정의 컨트롤, 현대적인 UI/UX 디자인을 포함한 고급 WPF 기술을 선보입니다.
 
