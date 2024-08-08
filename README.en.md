@@ -1,4 +1,4 @@
-# WPF Explorer [![한국어](https://img.shields.io/badge/Language-한국어-blue.svg)](README.md) [![English](https://img.shields.io/badge/Language-English-green.svg)](README.en.md) [![中文](https://img.shields.io/badge/Language-中文-red.svg)](README.zh-CN.md)
+# WPF Explorer [![English](https://img.shields.io/badge/Language-English-blue.svg)](README.en.md) [![中文](https://img.shields.io/badge/Language-中文-red.svg)](README.zh-CN.md)  [![한국어](https://img.shields.io/badge/Language-한국어-green.svg)](README.md)
 
 A showcase of advanced WPF techniques, including MVVM, custom controls, and modern UI/UX design, in a Windows Explorer clone.
 
