@@ -1,31 +1,40 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using WpfExplorer.Support.Local.Models;
 
+
 namespace WpfExplorer.Support.Local.Helpers
 {
     public class NavigatorService
     {
-        private Stack<Memento> backStack = new();
-        private Stack<Memento> forwardStack = new();
-        public FileInfoBase currentLocation;
+        private readonly Stack<Memento> backStack = new Stack<Memento>();
+        private readonly Stack<Memento> forwardStack = new Stack<Memento>();
+        private FileInfoBase currentLocation;
+
 
         public FileInfoBase Current => currentLocation;
-
+        
         public event EventHandler<LocationChangedEventArgs> LocationChanged;
+
 
         public void ChangeLocation(FileInfoBase newLocation)
         {
+            if (newLocation == null || string.Equals(currentLocation?.FullPath, newLocation.FullPath, StringComparison.OrdinalIgnoreCase)) return;
+
+
             if (currentLocation != null)
             {
                 SaveState();
             }
-            currentLocation = newLocation;
-            OnLocationChanged(new LocationChangedEventArgs(currentLocation));
 
+
+            currentLocation = newLocation;
+            forwardStack.Clear();
+            OnLocationChanged(new LocationChangedEventArgs(currentLocation));
         }
+
 
         public void GoBack()
         {
@@ -35,16 +44,21 @@ namespace WpfExplorer.Support.Local.Helpers
             }
         }
 
+
         public void GoForward()
         {
             if (forwardStack.Any())
-            { 
+            {
                 RestoreState(forwardStack, backStack);
             }
         }
 
+
         public void GoToParent()
         {
+            if (currentLocation == null) return;
+
+
             DirectoryInfo parentDir = Directory.GetParent(currentLocation.FullPath);
             if (parentDir != null)
             {
@@ -52,19 +66,22 @@ namespace WpfExplorer.Support.Local.Helpers
             }
         }
 
+
         private void SaveState()
         {
             backStack.Push(new Memento(currentLocation.FullPath));
         }
 
+
         private void RestoreState(Stack<Memento> popFrom, Stack<Memento> pushTo)
         {
             pushTo.Push(new Memento(currentLocation.FullPath));
-            currentLocation.FullPath = popFrom.Pop().GetSavedFullPath();
+            currentLocation = new FileInfoBase { FullPath = popFrom.Pop().GetSavedFullPath() };
             OnLocationChanged(new LocationChangedEventArgs(currentLocation));
         }
 
-        private void OnLocationChanged(LocationChangedEventArgs e)
+
+        protected virtual void OnLocationChanged(LocationChangedEventArgs e)
         {
             LocationChanged?.Invoke(this, e);
         }

@@ -1,5 +1,6 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
+
 
 namespace WpfExplorer.Support.UI.Units
 {
@@ -7,7 +8,9 @@ namespace WpfExplorer.Support.UI.Units
     {
         static MinimizeButton()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(MinimizeButton), new FrameworkPropertyMetadata(typeof(MinimizeButton)));
+            DefaultStyleKeyProperty.OverrideMetadata(
+                typeof(MinimizeButton),
+                new FrameworkPropertyMetadata(typeof(MinimizeButton)));
         }
     }
 }

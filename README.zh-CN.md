@@ -3,7 +3,7 @@
 在Windows资源管理器克隆中展示高级WPF技术，包括MVVM、自定义控件和现代UI/UX设计。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/download)
+[![.NET](https://img.shields.io/badge/.NET-10.0-blue.svg)](https://dotnet.microsoft.com/download)
 [![Stars](https://img.shields.io/github/stars/jamesnet214/wpf-explorer.svg)](https://github.com/jamesnet214/wpf-explorer/stargazers)
 [![Issues](https://img.shields.io/github/issues/jamesnet214/wpf-explorer.svg)](https://github.com/jamesnet214/wpf-explorer/issues)
 
@@ -37,7 +37,7 @@ WPF Explorer是《WPF INSIDE OUT》一书中的核心示例项目，旨在探索
 
 ## 技术栈
 
-- .NET 8.0
+- .NET 10.0
 - WPF (Windows Presentation Foundation) 
 - Jamesnet.Wpf
 - Prism

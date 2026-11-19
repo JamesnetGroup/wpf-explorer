@@ -1,5 +1,6 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls.Primitives;
+
 
 namespace WpfExplorer.Main.UI.Units
 {
@@ -7,7 +8,9 @@ namespace WpfExplorer.Main.UI.Units
     {
         static ExpandButton()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(ExpandButton), new FrameworkPropertyMetadata(typeof(ExpandButton)));
+            DefaultStyleKeyProperty.OverrideMetadata(
+                typeof(ExpandButton),
+                new FrameworkPropertyMetadata(typeof(ExpandButton)));
         }
     }
 }

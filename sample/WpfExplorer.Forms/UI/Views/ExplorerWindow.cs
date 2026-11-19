@@ -1,5 +1,6 @@
-﻿using System.Windows;
+using System.Windows;
 using WpfExplorer.Support.UI.Units;
+
 
 namespace WpfExplorer.Forms.UI.Views
 {
@@ -7,7 +8,9 @@ namespace WpfExplorer.Forms.UI.Views
     {
         static ExplorerWindow()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(ExplorerWindow), new FrameworkPropertyMetadata(typeof(ExplorerWindow)));
+            DefaultStyleKeyProperty.OverrideMetadata(
+                typeof(ExplorerWindow),
+                new FrameworkPropertyMetadata(typeof(ExplorerWindow)));
         }
     }
 }

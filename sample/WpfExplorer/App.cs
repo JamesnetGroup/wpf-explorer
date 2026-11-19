@@ -1,6 +1,7 @@
-﻿using Jamesnet.Wpf.Controls;
+using Jamesnet.Wpf.Controls;
 using System.Windows;
 using WpfExplorer.Forms.UI.Views;
+
 
 namespace WpfExplorer
 {

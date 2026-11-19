@@ -3,11 +3,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Units/ExpandButton.xaml"/>
-        <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Units/PolygonSelectoritem.xaml"/>
+        <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Units/PolygonSelectorItem.xaml"/>
         <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Units/PolygonSelector.xaml"/>
-        <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Units/FileListitem.xaml"/>
+        <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Units/FileListItem.xaml"/>
         <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Units/FileListBox.xaml"/>
-        <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Units/FolderTreeitem.xaml"/>
+        <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Units/FolderTreeItem.xaml"/>
         <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Units/FolderTreeView.xaml"/>
         <ResourceDictionary Source="/WpfExplorer.Main;component/Themes/Views/MainContent.xaml"/>
     </ResourceDictionary.MergedDictionaries>

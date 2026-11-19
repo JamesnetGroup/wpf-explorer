@@ -1,5 +1,6 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
+
 
 namespace WpfExplorer.Location.UI.Units
 {
@@ -7,7 +8,9 @@ namespace WpfExplorer.Location.UI.Units
     {
         static LocatorTextBox()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(LocatorTextBox), new FrameworkPropertyMetadata(typeof(LocatorTextBox)));
+            DefaultStyleKeyProperty.OverrideMetadata(
+                typeof(LocatorTextBox),
+                new FrameworkPropertyMetadata(typeof(LocatorTextBox)));
         }
     }
 }

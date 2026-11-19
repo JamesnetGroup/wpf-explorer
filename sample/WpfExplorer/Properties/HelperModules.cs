@@ -1,7 +1,8 @@
-﻿using Prism.Ioc;
+using Prism.Ioc;
 using Prism.Modularity;
-using WpfExplorer.Support.Local.Converters;
+using WpfExplorer.Support.Local.Models;
 using WpfExplorer.Support.Local.Helpers;
+
 
 namespace WpfExplorer.Properties
 {
@@ -11,12 +12,13 @@ namespace WpfExplorer.Properties
         {
         }
 
+
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<ColorManager>();
             containerRegistry.RegisterSingleton<DirectoryManager>();
-            containerRegistry.RegisterSingleton<FileService>();
             containerRegistry.RegisterSingleton<NavigatorService>();
+            containerRegistry.RegisterSingleton<FileService>();
         }
     }
 }

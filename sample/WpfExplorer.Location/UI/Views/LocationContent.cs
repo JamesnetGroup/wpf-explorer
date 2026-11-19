@@ -1,5 +1,6 @@
-﻿using Jamesnet.Wpf.Controls;
+using Jamesnet.Wpf.Controls;
 using System.Windows;
+
 
 namespace WpfExplorer.Location.UI.Views
 {
@@ -7,7 +8,9 @@ namespace WpfExplorer.Location.UI.Views
     {
         static LocationContent()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(LocationContent), new FrameworkPropertyMetadata(typeof(LocationContent)));
+            DefaultStyleKeyProperty.OverrideMetadata(
+                typeof(LocationContent),
+                new FrameworkPropertyMetadata(typeof(LocationContent)));
         }
     }
 }

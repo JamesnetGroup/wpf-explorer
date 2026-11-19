@@ -1,22 +1,21 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <!-- .NET 10 WPF 템플릿의 기본값 -->
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- 책은 기본 App.xaml과 MainWindow.xaml을 지우고 Starter.Main에서 시작한다 -->
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.78" />
-    <PackageReference Include="XamlDesign.Wpf" Version="1.0.0.1" />
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.113" />
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\WpfExplorer.Forms\WpfExplorer.Forms.csproj" />
-    <ProjectReference Include="..\WpfExplorer.Location\WpfExplorer.Location.csproj" />
-    <ProjectReference Include="..\WpfExplorer.Main\WpfExplorer.Main.csproj" />
     <ProjectReference Include="..\WpfExplorer.Support\WpfExplorer.Support.csproj" />
+    <ProjectReference Include="..\WpfExplorer.Forms\WpfExplorer.Forms.csproj" />
+    <ProjectReference Include="..\WpfExplorer.Main\WpfExplorer.Main.csproj" />
+    <ProjectReference Include="..\WpfExplorer.Location\WpfExplorer.Location.csproj" />
   </ItemGroup>
-
 </Project>

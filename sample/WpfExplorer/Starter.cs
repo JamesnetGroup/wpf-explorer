@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using WpfExplorer.Properties;
+
 
 namespace WpfExplorer
 {
@@ -7,7 +8,7 @@ namespace WpfExplorer
     {
         [STAThread]
         private static void Main(string[] args)
-        { 
+        {
             _ = new App()
                 .AddInversionModule<HelperModules>()
                 .AddInversionModule<ViewModules>()

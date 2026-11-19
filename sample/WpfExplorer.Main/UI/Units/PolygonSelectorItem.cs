@@ -1,5 +1,6 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
+
 
 namespace WpfExplorer.Main.UI.Units
 {
@@ -7,7 +8,9 @@ namespace WpfExplorer.Main.UI.Units
     {
         static PolygonSelectorItem()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(PolygonSelectorItem), new FrameworkPropertyMetadata(typeof(PolygonSelectorItem)));
+            DefaultStyleKeyProperty.OverrideMetadata(
+                typeof(PolygonSelectorItem),
+                new FrameworkPropertyMetadata(typeof(PolygonSelectorItem)));
         }
     }
 }

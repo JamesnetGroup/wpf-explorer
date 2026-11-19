@@ -1,5 +1,6 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
+
 
 namespace WpfExplorer.Support.UI.Units
 {
@@ -7,7 +8,9 @@ namespace WpfExplorer.Support.UI.Units
     {
         static CloseButton()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(CloseButton), new FrameworkPropertyMetadata(typeof(CloseButton)));
+            DefaultStyleKeyProperty.OverrideMetadata(
+                typeof(CloseButton),
+                new FrameworkPropertyMetadata(typeof(CloseButton)));
         }
     }
 }

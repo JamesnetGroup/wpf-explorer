@@ -1,12 +1,14 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:based="clr-namespace:WpfExplorer.Support.UI.Units;assembly=WpfExplorer.Support"
-                    xmlns:units="clr-namespace:WpfExplorer.Main.UI.Units">
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:based="clr-namespace:WpfExplorer.Support.UI.Units;assembly=WpfExplorer.Support"
+    xmlns:units="clr-namespace:WpfExplorer.Main.UI.Units">
     <Style TargetType="{x:Type units:FolderTreeView}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:FolderTreeView}">
-                    <based:DarkScrollViewer>
+                    <based:DarkScrollViewer HorizontalScrollBarVisibility="Auto"
+                                            VerticalScrollBarVisibility="Auto">
                         <ItemsPresenter/>
                     </based:DarkScrollViewer>
                 </ControlTemplate>

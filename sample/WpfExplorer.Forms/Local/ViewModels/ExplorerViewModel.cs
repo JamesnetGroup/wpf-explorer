@@ -1,7 +1,8 @@
-﻿using Jamesnet.Wpf.Controls;
+using Jamesnet.Wpf.Controls;
 using Jamesnet.Wpf.Mvvm;
 using Prism.Ioc;
 using Prism.Regions;
+
 
 namespace WpfExplorer.Forms.Local.ViewModels
 {
@@ -10,11 +11,13 @@ namespace WpfExplorer.Forms.Local.ViewModels
         private readonly IContainerProvider _containerProvider;
         private readonly IRegionManager _regionManager;
 
+
         public ExplorerViewModel(IContainerProvider containerProvider, IRegionManager regionManager)
         {
             _containerProvider = containerProvider;
             _regionManager = regionManager;
         }
+
 
         public void OnLoaded(IViewable view)
         {
@@ -22,11 +25,11 @@ namespace WpfExplorer.Forms.Local.ViewModels
             ImportContent("LocationContent", "LocationRegion");
         }
 
+
         private void ImportContent(string name, string regionName)
         {
-            IRegion region = _regionManager.Regions[regionName];
             IViewable content = _containerProvider.Resolve<IViewable>(name);
-
+            IRegion region = _regionManager.Regions[regionName];
             if (!region.Views.Contains(content))
             {
                 region.Add(content);

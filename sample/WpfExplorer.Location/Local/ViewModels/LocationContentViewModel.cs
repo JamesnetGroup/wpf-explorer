@@ -1,8 +1,9 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Jamesnet.Wpf.Mvvm;
 using WpfExplorer.Support.Local.Helpers;
 using WpfExplorer.Support.Local.Models;
+
 
 namespace WpfExplorer.Location.Local.ViewModels
 {
@@ -10,34 +11,41 @@ namespace WpfExplorer.Location.Local.ViewModels
     {
         private readonly NavigatorService _navigatorService;
 
+
         [ObservableProperty]
         private FileInfoBase _current;
 
-        public LocationContentViewModel(NavigatorService navigatorService) 
+
+        public LocationContentViewModel(NavigatorService navigatorService)
         {
             _navigatorService = navigatorService;
+            Current = _navigatorService.Current;
             _navigatorService.LocationChanged += _navigatorService_LocationChanged;
         }
 
-        private void _navigatorService_LocationChanged(object? sender, Support.Local.Models.LocationChangedEventArgs e)
+
+        private void _navigatorService_LocationChanged(object? sender, LocationChangedEventArgs e)
         {
             Current = e.Current;
         }
 
+
         [RelayCommand]
-        private void Up()
+        public void Up()
         {
             _navigatorService.GoToParent();
         }
 
+
         [RelayCommand]
-        private void Undo()
+        public void Back()
         {
             _navigatorService.GoBack();
         }
 
+
         [RelayCommand]
-        private void Redo()
+        public void Forward()
         {
             _navigatorService.GoForward();
         }

@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Markup;
+
 
 namespace WpfExplorer.Support.Local.Converters
 {
@@ -14,19 +15,22 @@ namespace WpfExplorer.Support.Local.Converters
             double size = long.Parse(value.ToString());
             int unit = 0;
 
-            while(size>=1024&& unit < 1)
+
+            while (size >= 1024 && unit < units.Length - 1)
             {
                 size /= 1024;
                 ++unit;
             }
             if (size == 0) return "";
-            return string.Format("{0:#,##0.#}{1}", size, units[unit]);
+            return String.Format("{0:#,##0.#}{1}", size, units[unit]);
         }
+
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             throw new NotImplementedException();
         }
+
 
         public override object ProvideValue(IServiceProvider serviceProvider)
         {

@@ -1,5 +1,6 @@
-﻿using Jamesnet.Wpf.Controls;
+using Jamesnet.Wpf.Controls;
 using System.Windows;
+
 
 namespace WpfExplorer.Main.UI.Views
 {
@@ -7,7 +8,9 @@ namespace WpfExplorer.Main.UI.Views
     {
         static MainContent()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(MainContent), new FrameworkPropertyMetadata(typeof(MainContent)));
+            DefaultStyleKeyProperty.OverrideMetadata(
+                typeof(MainContent),
+                new FrameworkPropertyMetadata(typeof(MainContent)));
         }
     }
 }

@@ -1,8 +1,9 @@
-﻿using Jamesnet.Wpf.Controls;
+using Jamesnet.Wpf.Controls;
 using Prism.Ioc;
 using Prism.Modularity;
-using WpfExplorer.Location.UI.Views;
 using WpfExplorer.Main.UI.Views;
+using WpfExplorer.Location.UI.Views;
+
 
 namespace WpfExplorer.Properties
 {
@@ -11,6 +12,7 @@ namespace WpfExplorer.Properties
         public void OnInitialized(IContainerProvider containerProvider)
         {
         }
+
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {

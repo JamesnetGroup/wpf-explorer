@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.IO;
+
 
 namespace WpfExplorer.Support.Local.Helpers
 {
@@ -9,16 +10,25 @@ namespace WpfExplorer.Support.Local.Helpers
         public string DocumentsDirectory { get; init; }
         public string PicturesDirectory { get; init; }
 
+
         public DirectoryManager()
-        { 
-            var userPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+        {
+            var userPath = Environment.GetFolderPath(
+                Environment.SpecialFolder.UserProfile
+            );
+
 
             DownloadDirectory = Path.Combine(userPath, "Downloads");
 
-            DocumentsDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-            PicturesDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+            DocumentsDirectory = Environment.GetFolderPath(
+                Environment.SpecialFolder.MyDocuments
+            );
+
+
+            PicturesDirectory = Environment.GetFolderPath(
+                Environment.SpecialFolder.MyPictures
+            );
         }
-
     }
 }

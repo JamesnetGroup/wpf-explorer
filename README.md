@@ -3,7 +3,7 @@
 Windows Explorer 클론에서 MVVM, 사용자 정의 컨트롤, 현대적인 UI/UX 디자인을 포함한 고급 WPF 기술을 선보입니다.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/download)
+[![.NET](https://img.shields.io/badge/.NET-10.0-blue.svg)](https://dotnet.microsoft.com/download)
 [![Stars](https://img.shields.io/github/stars/jamesnet214/wpf-explorer.svg)](https://github.com/jamesnet214/wpf-explorer/stargazers)
 [![Issues](https://img.shields.io/github/issues/jamesnet214/wpf-explorer.svg)](https://github.com/jamesnet214/wpf-explorer/issues)
 
@@ -37,7 +37,7 @@ WPF Explorer는 "WPF INSIDE OUT" 책의 핵심 예제 프로젝트로, WPF(Windo
 
 ## 기술 스택
 
-- .NET 8.0
+- .NET 10.0
 - WPF (Windows Presentation Foundation)
 - Jamesnet.Wpf
 - Prism

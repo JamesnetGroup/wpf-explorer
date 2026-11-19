@@ -3,7 +3,7 @@
 A showcase of advanced WPF techniques, including MVVM, custom controls, and modern UI/UX design, in a Windows Explorer clone.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/download)
+[![.NET](https://img.shields.io/badge/.NET-10.0-blue.svg)](https://dotnet.microsoft.com/download)
 [![Stars](https://img.shields.io/github/stars/jamesnet214/wpf-explorer.svg)](https://github.com/jamesnet214/wpf-explorer/stargazers)
 [![Issues](https://img.shields.io/github/issues/jamesnet214/wpf-explorer.svg)](https://github.com/jamesnet214/wpf-explorer/issues)
 
@@ -39,7 +39,7 @@ This project goes beyond simple examples and includes complex requirements and p
   
 ## Tech Stack
 
-- .NET 8.0
+- .NET 10.0
 - WPF (Windows Presentation Foundation) 
 - Jamesnet.Wpf
 - Prism

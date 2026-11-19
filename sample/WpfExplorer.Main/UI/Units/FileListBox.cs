@@ -1,5 +1,6 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
+
 
 namespace WpfExplorer.Main.UI.Units
 {
@@ -7,8 +8,11 @@ namespace WpfExplorer.Main.UI.Units
     {
         static FileListBox()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(FileListBox), new FrameworkPropertyMetadata(typeof(FileListBox)));
+            DefaultStyleKeyProperty.OverrideMetadata(
+                typeof(FileListBox),
+                new FrameworkPropertyMetadata(typeof(FileListBox)));
         }
+
 
         protected override DependencyObject GetContainerForItemOverride()
         {
